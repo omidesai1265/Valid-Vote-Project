@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
 
     // frame skipping counter
     private var frameCounter = 0
-
+    // deprecated
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
