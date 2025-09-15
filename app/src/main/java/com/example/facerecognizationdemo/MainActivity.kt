@@ -159,11 +159,9 @@ class MainActivity : AppCompatActivity() {
                     val aligned = alignFace(cropped, face) // 🔧 alignment
                     val scaled = getResizedBitmap(aligned, inputSize, inputSize)
                     val emb = runRecognitionForBitmap(scaled)
-                    if (emb != null) {
-                        val list = registered.getOrPut(name) { mutableListOf() }
-                        list.add(emb)
-                        Log.i("REGISTER", "Registered $name")
-                    }
+                    val list = registered.getOrPut(name) { mutableListOf() }
+                    list.add(emb)
+                    Log.i("REGISTER", "Registered $name")
                 } else {
                     Log.e("REGISTER", "No face detected for $name")
                 }
