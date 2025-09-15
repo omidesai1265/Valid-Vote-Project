@@ -1,0 +1,71 @@
+[plugins]
+android-application = { id = "com.android.application", version = "8.6.1" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version = "2.0.21" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version = "2.0.21" }
+
+
+[versions]
+
+androidx-core = "1.13.1"
+androidx-lifecycle = "2.8.4"
+androidx-activity-compose = "1.9.0"
+androidx-compose-bom = "2024.05.00"
+androidx-constraintlayout = "2.1.4"
+androidx-navigation = "2.8.0"
+camera = "1.3.4"
+gson = "2.13.2"
+mlkit-face-detection = "16.1.6"
+play-services-mlkit-face-detection = "17.1.0"
+lottie = "6.4.0"
+tflite-task-vision = "0.4.4"
+tflite-support = "0.4.4"
+concurrent-futures = "1.1.0"
+guava = "32.1.2-android"
+junit = "4.13.2"
+androidx-test-junit = "1.1.5"
+espresso-core = "3.5.1"
+play-services-tflite-gpu = "16.4.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidx-lifecycle" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidx-activity-compose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidx-compose-bom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidx-constraintlayout" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "androidx-navigation" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "androidx-navigation" }
+
+# CameraX
+androidx-camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "camera" }
+androidx-camera-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "camera" }
+androidx-camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "camera" }
+androidx-camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "camera" }
+
+# ML Kit
+face-detection = { group = "com.google.mlkit", name = "face-detection", version.ref = "mlkit-face-detection" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+play-services-mlkit-face-detection = { group = "com.google.android.gms", name = "play-services-mlkit-face-detection", version.ref = "play-services-mlkit-face-detection" }
+
+# Lottie
+lottie = { group = "com.airbnb.android", name = "lottie", version.ref = "lottie" }
+
+# TensorFlow Lite
+tensorflow-lite-task-vision = { group = "org.tensorflow", name = "tensorflow-lite-task-vision", version.ref = "tflite-task-vision" }
+tensorflow-lite-support = { group = "org.tensorflow", name = "tensorflow-lite-support", version.ref = "tflite-support" }
+
+# Futures + Guava
+androidx-concurrent-futures = { group = "androidx.concurrent", name = "concurrent-futures", version.ref = "concurrent-futures" }
+guava = { group = "com.google.guava", name = "guava", version.ref = "guava" }
+
+# Testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-junit" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+play-services-tflite-gpu = { group = "com.google.android.gms", name = "play-services-tflite-gpu", version.ref = "play-services-tflite-gpu" }
